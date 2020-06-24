@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:dalkmobile/screens/home_screen.dart';
-import 'package:dalkmobile/services/api_handler.dart';
+import 'package:DALK/screens/home_screen.dart';
+import 'package:DALK/services/api_handler.dart';
 import 'package:flutter/material.dart';
 
 class LoadingScreen extends StatefulWidget {

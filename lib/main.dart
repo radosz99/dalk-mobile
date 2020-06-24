@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dalkmobile/screens/loading-screen.dart';
+import 'package:DALK/screens/loading-screen.dart';
 
 void main() => runApp(MyApp());
 

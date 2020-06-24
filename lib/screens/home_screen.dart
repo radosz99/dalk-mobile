@@ -1,8 +1,11 @@
-import 'package:dalkmobile/components/mvp_area.dart';
-import 'package:dalkmobile/components/reusable_card.dart';
+import 'package:DALK/components/custom_bottom_app_bar.dart';
+import 'package:DALK/components/mvp_area.dart';
+import 'package:DALK/components/reusable_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:DALK/presentation/bottom_app_bar_icons.dart';
+import 'package:DALK/components/bottom_app_bar_element.dart' as AppBarB;
 
 
 class HomeScreen extends StatefulWidget {
@@ -68,6 +71,9 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
+                SizedBox(
+                  height: 10.0,
+                ),
                 Expanded(
                   flex: 5,
                   child: Row(
@@ -93,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     cardChild: Container(
                       child: Center(
                           child: Text(
-                            'Sto Twarzy Grzybiarzy rozpierdoliło DALK',
+                            'Statystycy DALK rozpierdolili Strefę Betonu',
                             style: TextStyle(
                               fontSize: 30.0,
                               fontWeight: FontWeight.bold,
@@ -106,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.grey,
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.4), BlendMode.dstATop),
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
                           image: new NetworkImage('https://dalk.pl/images/aktualnosci-foto/baner-dalk.jpg'),
                         ),
                       ),
@@ -118,18 +124,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Expanded(
                   flex: 2,
-                  child: PreferredSize(
-                    preferredSize: Size.fromHeight(25.0),
-                    child: BottomNavigationBar(
-                      backgroundColor: Color.fromRGBO(12, 53, 104, 1.0),
-                      items:  <BottomNavigationBarItem>[
-                        BottomNavigationBarItem(
-                          icon: Icon(Icons.explore), title: Text('Explore')),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.explore), title: Text('Explore')),
-                      ],
-                    ),
-                  ),
+                  child: CustomAppBar(
+                    index: 0,
+                  )
                 )
               ],
             ),
