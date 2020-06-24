@@ -1,4 +1,4 @@
-name: dalkmobile
+name: DALK
 description: A new Flutter application.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   http: ^0.12.1
   font_awesome_flutter: ^8.8.1
+  cached_network_image: ^2.2.0+1
 
 dev_dependencies:
   flutter_test:

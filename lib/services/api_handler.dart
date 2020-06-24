@@ -1,6 +1,6 @@
 import 'networking.dart';
 
-const kApiURL = 'https://0dfe6232a6b4.ngrok.io/api/v1/';
+const kApiURL = 'https://fa771a338477.ngrok.io/api/v1/';
 
 class ApiHandler{
   Future<dynamic> getMVPInfo() async{
