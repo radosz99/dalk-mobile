@@ -102,6 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Statystycy DALK rozpierdolili Strefę Betonu',
                             style: TextStyle(
                               fontSize: 30.0,
+                                fontFamily: 'SourceSansPro',
                               fontWeight: FontWeight.bold,
                               color: Colors.white
                             ),
@@ -112,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.grey,
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.multiply),
                           image: new NetworkImage('https://dalk.pl/images/aktualnosci-foto/baner-dalk.jpg'),
                         ),
                       ),

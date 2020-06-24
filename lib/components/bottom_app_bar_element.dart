@@ -24,7 +24,8 @@ class BottomAppBarElement extends StatelessWidget {
           Text(
             text,
             style: TextStyle(
-                fontSize: 10.0,
+                fontFamily: 'SourceSansPro',
+                fontSize: 11.0,
                 color: Colors.white
             ),
           )
